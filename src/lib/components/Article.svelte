@@ -1,5 +1,6 @@
 <script>
-  import SvelteMarkdown from 'svelte-markdown';
+  import Markdown from '$lib/components/Markdown.svelte';
+
   export let article;
 </script>
 
@@ -12,7 +13,7 @@
     <img class="cover" src={article.cover} alt="封面" />
   </div>
   <div>
-    <SvelteMarkdown source={article.content} />
+    <Markdown content={article.content} />
   </div>
 </div>
 

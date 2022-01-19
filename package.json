@@ -12,6 +12,7 @@
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.26",
     "@sveltejs/kit": "next",
+    "@types/markdown-it": "^12.2.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
@@ -22,6 +23,8 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "svelte-markdown": "^0.2.2"
+    "markdown-it": "^12.3.2",
+    "markdown-it-highlightjs": "^3.6.0",
+    "markdown-it-texmath": "^0.9.7"
   }
 }
