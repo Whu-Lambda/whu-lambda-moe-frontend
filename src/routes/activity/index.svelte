@@ -1,5 +1,5 @@
 <script>
-  import EventCard from '$lib/components/EventCard.svelte';
+  import ActivityCard from '$lib/components/ActivityCard.svelte';
 
   export let events = [
     {
@@ -17,7 +17,7 @@
   <div class="col-md-8">
     <h4>近期活动</h4>
     {#each events as event, idx (idx)}
-      <EventCard {event} />
+      <ActivityCard {event} />
     {/each}
   </div>
 </div>
