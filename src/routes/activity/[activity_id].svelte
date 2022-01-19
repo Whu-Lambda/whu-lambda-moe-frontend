@@ -1,5 +1,5 @@
 <script>
-  import Event from '$lib/components/Event.svelte';
+  import Event from '$lib/components/Activity.svelte';
 
   export let event = {
     id: 1,

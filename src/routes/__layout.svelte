@@ -1,16 +1,12 @@
 <div class="container-fluid sticky-footer-wrapper">
   <header class="d-flex flex-wrap justify-content-center align-items-center py-2 mb-4 border-bottom">
     <a href="/" class="me-auto">
-      <img
-        class="logo"
-        src="/logo.png"
-        alt="logo"
-      />
+      <img class="logo" src="/logo.png" alt="logo" />
     </a>
 
     <ul class="nav nav-pills">
       <li class="nav-item"><a href="/articles" class="nav-link">近期文章</a></li>
-      <li class="nav-item"><a href="/events" class="nav-link">活动预告</a></li>
+      <li class="nav-item"><a href="/activity" class="nav-link">活动预告</a></li>
       <li class="nav-item"><a href="/about" class="nav-link">关于我们</a></li>
       <li class="nav-item"><a href="/member" class="nav-link">加入我们</a></li>
     </ul>

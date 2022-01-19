@@ -1,11 +1,11 @@
 <script>
   import Start from '$lib/components/Start.svelte';
-  import EventStart from '$lib/components/EventStart.svelte';
+  import ActivityStart from '$lib/components/ActivityStart.svelte';
   import ArticleStart from '$lib/components/ArticleStart.svelte';
 </script>
 
 <Start />
 
-<EventStart />
+<ActivityStart />
 
 <ArticleStart />
