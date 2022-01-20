@@ -12,14 +12,18 @@
 
 <script>
   import Start from '$lib/components/Start.svelte';
-  import ActivityStart from '$lib/components/ActivityStart.svelte';
-  import ArticleStart from '$lib/components/ArticleStart.svelte';
-
-  export let articles;
+  import StartB from '$lib/components/StartB.svelte';
+  import StartA from '$lib/components/StartA.svelte';
+  import StartC from '$lib/components/StartC.svelte';
+  import StartD from '$lib/components/StartD.svelte';
 </script>
 
 <Start />
 
-<ActivityStart />
+<StartA />
 
-<ArticleStart {articles} />
+<StartB />
+
+<StartC />
+
+<StartD />

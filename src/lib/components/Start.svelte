@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<h2 class="px-5 ">求知，探索，发现</h2>
+<h2 class="px-5 ">求知，分享，探索，创作</h2>
 
 <style>
   h1 {
