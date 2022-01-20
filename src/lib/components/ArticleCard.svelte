@@ -13,6 +13,6 @@
     <span><strong>时间: </strong>{article.created_at} </span>
   </div>
   <div class="post-abstract">
-    {article.content}
+    {article.about}
   </div>
 </div>
