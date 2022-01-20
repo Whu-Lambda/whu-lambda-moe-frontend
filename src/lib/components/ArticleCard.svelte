@@ -12,7 +12,7 @@
     <span><strong>作者: </strong>{article.author} </span>
     <span><strong>时间: </strong>{article.created_at} </span>
   </div>
-  <div class="post-abstract">
+  <div class="my-2">
     {article.about}
   </div>
 </div>

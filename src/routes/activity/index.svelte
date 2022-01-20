@@ -1,23 +1,25 @@
+<script context="module">
+  export const load = async ({ fetch }) => {
+    const res = await fetch('http://127.0.0.1:8000/activities/');
+    const activities = await res.json();
+    return {
+      props: {
+        activities
+      }
+    };
+  };
+</script>
+
 <script>
   import ActivityCard from '$lib/components/ActivityCard.svelte';
 
-  export let events = [
-    {
-      id: 1,
-      name: 'undefined',
-      time: '2022-01-18 18:30-20:30',
-      place: 'undefined',
-      status: 'undefined',
-      content: `undefined`
-    }
-  ];
+  export let activities;
 </script>
 
 <div class="row justify-content-center">
   <div class="col-md-8">
-    <h4>近期活动</h4>
-    {#each events as event, idx (idx)}
-      <ActivityCard {event} />
+    {#each activities as activity, idx (idx)}
+      <ActivityCard {activity} />
     {/each}
   </div>
 </div>

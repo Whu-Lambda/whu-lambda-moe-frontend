@@ -1,20 +1,21 @@
 <script>
-  export let event;
+  import Markdown from '$lib/components/Markdown.svelte';
+  export let activity;
 </script>
 
 <div class="mb-5">
-  <div class="event-title">
-    <a href="/events/{event.id}">
-      <h4>{event.name}</h4>
+  <div>
+    <a href="/activity/{activity.id}">
+      <h4>{activity.name}</h4>
     </a>
   </div>
-  <div class="event-meta">
-    <span><strong>时间: </strong>{event.time} </span>
-    <span><strong>地点:</strong> {event.place}</span>
-    <span class="badge rounded-pill bg-success"> {event.status}</span>
+  <div>
+    <span><strong>时间: </strong>{activity.time_slot} </span>
+    <span><strong>地点:</strong> {activity.place}</span>
+    <span class="badge rounded-pill bg-success"> {activity.status}</span>
     <br />
   </div>
-  <div class="event-abstract">
-    {event.content}
+  <div>
+    <Markdown content={activity.summary} />
   </div>
 </div>

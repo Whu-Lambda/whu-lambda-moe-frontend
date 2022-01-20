@@ -1,18 +1,24 @@
-<script>
-  import Event from '$lib/components/Activity.svelte';
-
-  export let event = {
-    id: 1,
-    name: 'undefined',
-    time: '2022-01-18 18:30-20:30',
-    place: 'undefined',
-    status: 'undefined',
-    content: `undefined`
+<script context="module">
+  export const load = async ({ fetch, params }) => {
+    const activity_id = params.activity_id;
+    const res = await fetch(`http://127.0.0.1:8000/activities/${activity_id}/`);
+    const activity = await res.json();
+    return {
+      props: {
+        activity
+      }
+    };
   };
+</script>
+
+<script>
+  import Activity from '$lib/components/Activity.svelte';
+
+  export let activity;
 </script>
 
 <div class="row justify-content-center">
   <div class="col-md-8">
-    <Event {event} />
+    <Activity {activity} />
   </div>
 </div>

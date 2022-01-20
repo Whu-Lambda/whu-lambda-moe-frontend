@@ -16,8 +16,6 @@
   export let articles;
 </script>
 
-<h4>近期文章</h4>
-
 {#each articles as article, idx (idx)}
   <ArticleCard {article} />
 {/each}
