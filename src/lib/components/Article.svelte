@@ -5,7 +5,7 @@
 </script>
 
 <div>
-  <h2>{article.name}</h2>
+  <h1 class="text-center">{article.name}</h1>
   <p class="text-center py-3">
     <span><strong>作者：</strong> {article.author}</span> | <span><strong>时间：</strong>{article.created_at}</span>
   </p>
