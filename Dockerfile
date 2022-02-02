@@ -1,8 +1,12 @@
-FROM node:fermium-alpine
+FROM node:16.13-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install --production
-COPY *.js *.json src/ static/ ./
-RUN npm build
+COPY . .
+RUN npm run build
+
+FROM node:16.13-alpine
+WORKDIR /app
+COPY --from=builder /app/out .
 ENTRYPOINT [ "node", "out" ]
 EXPOSE 3000
