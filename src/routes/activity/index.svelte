@@ -1,19 +1,15 @@
-<script context="module">
-  export const load = async ({ fetch }) => {
-    const res = await fetch('http://127.0.0.1:8000/activities/');
-    const activities = await res.json();
-    return {
-      props: {
-        activities
-      }
-    };
-  };
-</script>
-
 <script>
   import ActivityCard from '$lib/components/ActivityCard.svelte';
-
-  export let activities;
+  import { anonymousPromise } from '$lib/utils/grpc';
+  let activities;
+  const load = async () => {
+    const client = await anonymousPromise;
+    const stream = client.getActivities({});
+    stream.on('data', (activity) => {
+      activities = activities.push(activity);
+    });
+  };
+  load();
 </script>
 
 <div class="row justify-content-center">

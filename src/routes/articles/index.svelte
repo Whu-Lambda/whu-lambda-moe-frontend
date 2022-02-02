@@ -1,19 +1,15 @@
-<script context="module">
-  export const load = async ({ fetch }) => {
-    const res = await fetch('http://127.0.0.1:8000/articles/');
-    const articles = await res.json();
-    return {
-      props: {
-        articles
-      }
-    };
-  };
-</script>
-
 <script>
   import ArticleCard from '$lib/components/ArticleCard.svelte';
-
-  export let articles;
+  import { anonymousPromise } from '$lib/utils/grpc';
+  let articles;
+  const load = async () => {
+    const client = await anonymousPromise;
+    const stream = client.getArticles({});
+    stream.on('data', (arti) => {
+      articles = articles.push(arti);
+    });
+  };
+  load();
 </script>
 
 {#each articles as article, idx (idx)}

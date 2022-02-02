@@ -10,7 +10,7 @@
     </a>
   </div>
   <div>
-    <span><strong>时间: </strong>{activity.time_slot} </span>
+    <span><strong>时间: </strong>{activity.time} </span>
     <span><strong>地点:</strong> {activity.place}</span>
     <span class="badge rounded-pill bg-success"> {activity.status}</span>
     <br />

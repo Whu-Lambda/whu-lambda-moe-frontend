@@ -1,11 +1,9 @@
 <script context="module">
-  export const load = async ({ fetch, params }) => {
+  export const load = async ({ params }) => {
     const activity_id = params.activity_id;
-    const res = await fetch(`http://127.0.0.1:8000/activities/${activity_id}/`);
-    const activity = await res.json();
     return {
       props: {
-        activity
+        activity_id
       }
     };
   };
@@ -13,8 +11,19 @@
 
 <script>
   import Activity from '$lib/components/Activity.svelte';
+  import { anonymousPromise } from '$lib/utils/grpc';
 
-  export let activity;
+  let activity;
+
+  const load = async () => {
+    const client = await anonymousPromise;
+    const call = client.getActivity(activity_id);
+    call.on('data', (acti) => {
+      activity = acti;
+    });
+  };
+  load();
+  export let activity_id;
 </script>
 
 <div class="row justify-content-center">

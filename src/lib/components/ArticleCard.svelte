@@ -12,7 +12,7 @@
   </div>
   <div class="post-meta">
     <span><strong>作者: </strong>{article.author} </span>
-    <span><strong>时间: </strong>{format_time(article.created_at)} </span>
+    <span><strong>时间: </strong>{format_time(article.createdAt)} </span>
   </div>
   <div class="my-2">
     {article.about}
