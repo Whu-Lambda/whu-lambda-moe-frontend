@@ -1,6 +1,6 @@
 {
   "name": "whulambda",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -23,8 +23,8 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.5.4",
     "@grpc/proto-loader": "^0.6.9",
-    "@sveltejs/adapter-node": "^1.0.0-next.0",
-    "@sveltejs/kit": "^1.0.0-next.1",
+    "@sveltejs/adapter-node": "^1.0.0-next.23",
+    "@sveltejs/kit": "^1.0.0-next.114",
     "katex": "^0.15.2",
     "markdown-it": "^12.3.2",
     "markdown-it-highlightjs": "^3.6.0",
