@@ -3,6 +3,6 @@
     <slot />
   </div>
   <div class="col">
-    <a class="btn btn-primary" href='/articles/submit'>我要投稿</a>
+    <a class="btn btn-primary" href="/activity/order">我要预约</a>
   </div>
 </div>

@@ -12,6 +12,8 @@
   load();
 </script>
 
-{#each articles as article, idx (idx)}
-  <ArticleCard {article} />
-{/each}
+{#if articles}
+  {#each articles as article, idx (idx)}
+    <ArticleCard {article} />
+  {/each}
+{/if}

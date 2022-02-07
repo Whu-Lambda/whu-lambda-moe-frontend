@@ -12,10 +12,8 @@
   load();
 </script>
 
-<div class="row justify-content-center">
-  <div class="col-md-8">
-    {#each activities as activity, idx (idx)}
-      <ActivityCard {activity} />
-    {/each}
-  </div>
-</div>
+{#if activities}
+  {#each activities as activity, idx (idx)}
+    <ActivityCard {activity} />
+  {/each}
+{/if}
