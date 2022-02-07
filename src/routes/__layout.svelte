@@ -8,6 +8,7 @@
       <li class="nav-item"><a href="/articles" class="nav-link">近期文章</a></li>
       <li class="nav-item"><a href="/activity" class="nav-link">活动预告</a></li>
       <li class="nav-item"><a href="/member" class="nav-link">加入我们</a></li>
+      <li class="nav-item"><a href="/login" class="nav-link active">登录注册</a></li>
     </ul>
   </header>
 
