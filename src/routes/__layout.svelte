@@ -20,9 +20,10 @@
 
     <div class="row">
       <div class="col-md-6 px-5">
-        WHU-Lamda 最初由武汉大学喜欢 lambda 编程的同学组成，讨论的主题包括但不限于编程语言理论，自动推理，计算数学。
+        <h5>About Us</h5>
+        <p>WHU-Lamda 最初由武汉大学喜欢 lambda 编程的同学组成，讨论的主题包括但不限于编程语言理论，自动推理，计算数学。</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 px-5">
         <h5>Contact Us</h5>
         <ul>
           <li><a href="https://github.com/whu-lambda/"><i class="fa-brands fa-github" /> GitHub </a></li>
@@ -30,18 +31,11 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-center my-3">
-      <span>
-        © 2022<a href="https://lookelooke.com">whu-lambda</a>
-      </span>
-      <span class="ms-3">
+    <div class="d-flex flex-wrap justify-content-center my-3">
+      <span> © 2022 whu-lambda.moe </span>
+      <!-- <span class="ms-3">
         <a target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备20210xxxxx号-1</a>
-      </span>
-      <span class="ms-3">
-        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42010602004616">
-          <img class="d-inline me-1" src="/beiantubiao.png" alt="备案图标" />鄂公网安备4201060xxxxxxx号
-        </a>
-      </span>
+      </span> -->
     </div>
   </footer>
 </div>
